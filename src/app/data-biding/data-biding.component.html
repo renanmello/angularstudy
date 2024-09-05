@@ -91,6 +91,51 @@
     </article>
   </section>
 </div>
+<br>
+<div>
+  <section>
+    <h3>Two-Way Data-biding</h3>
+    <div>
+      <input
+      [value] ="nome" 
+      (input)="nome=evento.value"
+      type="text"
+      #evento 
+      />
+
+      <input
+      [ngModel] ="nome" 
+      (ngModelChange)="nome=$event"
+      type="text"
+      
+      />
+
+      <input
+      [(ngModel)] ="nome" 
+      type="text"
+      />
+
+      <input
+      bindon-ngModel ="nome" 
+      type="text"
+      />
+
+      <p>Voce digitou o {{nome}}</p>
+    </div>
+    <br>
+    <div>
+      <input
+      [(ngModel)] ="pessoa.nome" 
+      type="text"
+      />
+      <input
+      [(ngModel)] ="pessoa.idade" 
+      type="text"
+      />
+      <p>Meu nome é {{pessoa.nome}} e tenho {{pessoa.idade}}</p>
+    </div>
+  </section>
+</div>
           
     
 
