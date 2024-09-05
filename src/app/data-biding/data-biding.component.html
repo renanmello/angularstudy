@@ -66,6 +66,31 @@
             Danger
 </div>
 </section>  
+
+<div>
+  <section>
+    <p> Event Binding</p>
+    <article>
+      <div>
+        <button (click)="botaoClicado()"
+        class="btn btn-primary">Click Here</button>
+      </div>
+      <br>
+      <div>
+        <input type="text" (keyup)="onKeyUp($event)" (keyup.enter)="salvarValor($event.target)"
+         />
+      </div>
+      <p>O Valor da caixa: {{valorAtual}}</p>
+      <p>O Valor salvo: {{valorSalvo}}</p>
+      <br>
+      <span (mouseup)="onMouseOverOut()"
+      (mouseout)="onMouseOverOut()"
+      [class.highlight] = "isMouseOver"
+      >Passe o mouse em min</span>
+      <br>
+    </article>
+  </section>
+</div>
           
     
 
