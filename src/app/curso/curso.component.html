@@ -1,0 +1,25 @@
+<p>curso works!</p>
+<p>Lista de cursos {{nomePortal}}</p>
+
+<p>Sem diretiva</p>
+<ul>
+    <li>Java</li>
+    <li>Angular</li>
+</ul>
+
+<p>Com diretiva</p>
+<ul>
+    <li *ngFor="let curso of cursos">
+        {{curso}}
+    </li>
+    
+</ul>
+
+
+<p>Com service</p>
+<ul>
+    <li *ngFor="let curso of cursos2">
+        {{curso}}
+    </li>
+    
+</ul>
