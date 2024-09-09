@@ -8,13 +8,17 @@ import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';
 import { FormsModule } from '@angular/forms';
 import { CursoModule } from './curso/curso.module';
 import { DataBidingComponent } from './data-biding/data-biding.component';
+import { InputPropertyComponent } from './input-property/input-property.component';
+import { CicloComponent } from './ciclo/ciclo.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MeuPrimeiroComponent,
-    DataBidingComponent
+    DataBidingComponent,
+    InputPropertyComponent,
+    CicloComponent
   ],
   imports: [
     BrowserModule,

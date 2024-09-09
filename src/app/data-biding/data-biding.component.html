@@ -141,8 +141,21 @@
   <section class="input-output-properties">
     <article>
     <h3> Input/output properties </h3>
+    <app-input-property [nome]="nomeCurso"></app-input-property>
     </article>
   </section>
 </div>
+<br>
+<div>
+  <section class="ciclo">
+    <article>
+    <h3> Life-Cycle </h3>
+    <app-ciclo [valorInicial]="valor" *ngIf="!deletar"></app-ciclo>
+    <button class="btn btn-primary" (click)="mudarValor()" >Mudar valor</button>
+    <button class="btn btn-primary" (click)="destruirCiclo()">Deletar</button>
+    </article>
+  </section>
+</div>
+
     
 

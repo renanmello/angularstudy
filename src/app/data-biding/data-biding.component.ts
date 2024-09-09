@@ -11,6 +11,12 @@ export class DataBidingComponent {
   urlImagem2:string = 'http://lorempixel.com.br/500/400/?2';
   valorAtual = "";
   valorSalvo = "";
+  nomeCurso: string = 'Angular';
+  valor = 0;
+  deletar: boolean = false;
+  
+
+  
   isMouseOver:boolean = false;
   nome:string = "abc"
   pessoa = {
@@ -34,6 +40,13 @@ export class DataBidingComponent {
   }
   onMouseOverOut(){
     this.isMouseOver = !this.isMouseOver;
+  }
+
+  mudarValor(){
+    this.valor++;
+  }
+  destruirCiclo(){
+    this.deletar = true;
   }
 
 }
