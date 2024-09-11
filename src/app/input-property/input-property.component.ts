@@ -8,8 +8,8 @@ import { Component, Input, ViewChild} from '@angular/core';
 export class InputPropertyComponent {
   @ViewChild('campoInput', {static: true}) campoValorInput!: HTMLElement;
  
-  @Input() nome:string = '';
-  valor: number = 10;
+  @Input() nome = '';
+  valor = 10;
   incrementa(){
    console.log(this.campoValorInput);
    this.valor ++;

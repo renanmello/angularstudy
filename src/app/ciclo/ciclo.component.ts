@@ -8,7 +8,7 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
 export class CicloComponent implements OnInit, OnChanges, DoCheck, OnDestroy, AfterContentInit, AfterContentChecked,
  AfterViewInit, AfterViewChecked{
    
-  @Input() valorInicial:number = 10;
+  @Input() valorInicial = 10;
   constructor(){
     this.log("construtor");
   }

@@ -6,19 +6,19 @@ import { Component } from '@angular/core';
   styleUrl: './data-biding.component.css'
 })
 export class DataBidingComponent {
-  url:string = 'https://resumepage.com';
-  urlImagem:string = 'http://lorempixel.com.br/500/400/?1';
-  urlImagem2:string = 'http://lorempixel.com.br/500/400/?2';
+  url = 'https://resumepage.com';
+  urlImagem = 'http://lorempixel.com.br/500/400/?1';
+  urlImagem2 = 'http://lorempixel.com.br/500/400/?2';
   valorAtual = "";
   valorSalvo = "";
-  nomeCurso: string = 'Angular';
+  nomeCurso = 'Angular';
   valor = 0;
-  deletar: boolean = false;
+  deletar = false;
   
 
   
-  isMouseOver:boolean = false;
-  nome:string = "abc"
+  isMouseOver = false;
+  nome = "abc"
   pessoa = {
     nome:"Def",
     idade: 20
@@ -31,8 +31,8 @@ export class DataBidingComponent {
   }
 
   onKeyUp(evento: KeyboardEvent){
-    console.log((<HTMLInputElement>evento.target).value);
-    this.valorAtual= (<HTMLInputElement>evento.target).value;
+    console.log((evento.target as HTMLInputElement).value);
+    this.valorAtual= (evento.target as HTMLInputElement).value;
 
   }
   salvarValor(valor: any){
